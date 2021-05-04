@@ -146,6 +146,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zac-123design.github.io/2021/05/04/Mathematica%E8%BD%AF%E4%BB%B6%E5%85%A5%E9%97%A8-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zhangaichen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张爱晨的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/04/Mathematica%E8%BD%AF%E4%BB%B6%E5%85%A5%E9%97%A8-2/" class="post-title-link" itemprop="url">Mathematica软件入门(2)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-04 18:25:12 / 修改时间：19:05:11" itemprop="dateCreated datePublished" datetime="2021-05-04T18:25:12+08:00">2021-05-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="作图与拟合"><a href="#作图与拟合" class="headerlink" title="作图与拟合"></a>作图与拟合</h1><h2 id="基本一元函数作图"><a href="#基本一元函数作图" class="headerlink" title="基本一元函数作图"></a>基本一元函数作图</h2><p>命令格式：<strong>Plot[f[x],{x,xmin,xmax},可选项]</strong><br>其中f[x]代表一个函数表达式，x表示函数的自变量，xmin，xmax分别表示所要做的图形中x取值的下、上限。<br>可选项是对图形参数的规定，如果不写可选项，则系统按内定的参数输出图形。<br>例： Plot[x^3,{x,-1,1}]  </p>
+<p>同时画多个函数的图形。命令格式：<strong>Plot[{f1,f2,f3,…},{x,xmin,xmax},可选项]</strong><br>注意，多个函数应使用同一个自变量x。。</p>
+<hr>
+<h2 id="参数方程作图"><a href="#参数方程作图" class="headerlink" title="参数方程作图"></a>参数方程作图</h2><p>命令格式：<strong>ParametricPlot[参数方程，参数范围，可选项]</strong><br>例： ParametricPlot[{2*(t-Sin[t]),2*(1-Cos[t])},{t,0,4*Pi}]</p>
+<hr>
+<h2 id="极坐标方程作图"><a href="#极坐标方程作图" class="headerlink" title="极坐标方程作图"></a>极坐标方程作图</h2><p>命令格式：<strong>PolarPlot[极坐标函数，变量范围，可选项]</strong><br>例： 绘制函数ρ=1-cosθ的图形<br>PolarPlot[1-Cos[t],{t,0,2*Pi}]</p>
+<hr>
+<h2 id="隐函数作图"><a href="#隐函数作图" class="headerlink" title="隐函数作图"></a>隐函数作图</h2><p>命令格式：<strong>ContourPlot[表达式，{x,x1,x2},{y,y1,y2}]</strong><br>例： ContourPlot[x^3+y^3==3x*y，{x,-3,3},{y,-3,3}]</p>
+<hr>
+<p>时间原因，今天就更新到这里。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zac-123design.github.io/2021/05/03/Mathematica%E8%BD%AF%E4%BB%B6%E5%85%A5%E9%97%A8-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,10 +237,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-03 19:29:32 / 修改时间：20:26:39" itemprop="dateCreated datePublished" datetime="2021-05-03T19:29:32+08:00">2021-05-03</time>
+              <time title="创建时间：2021-05-03 19:29:32" itemprop="dateCreated datePublished" datetime="2021-05-03T19:29:32+08:00">2021-05-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-04 18:28:21" itemprop="dateModified" datetime="2021-05-04T18:28:21+08:00">2021-05-04</time>
+              </span>
 
           
 
@@ -188,7 +262,7 @@
           <h1 id="软件入门"><a href="#软件入门" class="headerlink" title="软件入门"></a>软件入门</h1><hr>
 <h2 id="Mathematica的语法要求"><a href="#Mathematica的语法要求" class="headerlink" title="Mathematica的语法要求"></a>Mathematica的语法要求</h2><ol>
 <li>系统的所有函数（命令）都必须以大写英文字母开头，并注意区分大小写，自变量要放在方括号[]内。变量名最好用小写字母，否则容易与软件内部函数（命令）名冲突，比如大写字母C和D都不能用来作为变量名。</li>
-<li>Mathematica中常用的运算符号有5个（加、减、乘、除、乘方）：+、-、*（或空格）、^,空格的用法比较特殊，要特别注意。</li>
+<li>Mathematica中常用的运算符号有5个（加、减、乘、除、乘方）：+、-、*（或空格）、\、^,空格的用法比较特殊，要特别注意。</li>
 <li>输入键盘上没有的字符或数字记号，可以再Palettes菜单中项里的“Basic Math Input”，打开基本输入模板。</li>
 <li>Mathematic中的标点符号必须要切换到英文状态下输入。圆括号（ ）仅用来改变运算次序，花括号{ }则用于命令中的选项或表示集合，注意各种括号必须成对出现。</li>
 </ol>
@@ -600,7 +674,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
